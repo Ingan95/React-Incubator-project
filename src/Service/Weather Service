@@ -11,6 +11,5 @@ export const getForcast = (current_city) => {
     .catch(error => {
         alert(error +'\n'+ url);
     })
-
     return cityForcast;
 };

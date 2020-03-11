@@ -4,7 +4,7 @@ import TextField from '@material-ui/core/TextField';
 class SearchField extends Component {
     render(){
         return(
-            <TextField id = "standard-basic" label="Enter name of city"/>
+            <TextField id = "standard-basic" label= {this.props.text} onChangeCapture = {this.props.onChangeCapture} onKeyDownCapture = {this.props.onKeyDownCapture}/>
         );
     }
 }
