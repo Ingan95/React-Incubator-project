@@ -1,0 +1,16 @@
+import Axios from 'axios';
+
+export const getForcast = (current_city) => {
+    let cityForcast;
+    const url = 'http://api.openweathermap.org/data/2.5/weather?q='+ current_city +'&appid=2ef4e7c15ba3ada1b11bba89ff522f9c';
+    Axios.get(url)
+    .then(response => {
+        alert(current_city + ': ' + response.data.coord["lon"]);
+        cityForcast = response.weather;
+    })
+    .catch(error => {
+        alert(error +'\n'+ url);
+    })
+
+    return cityForcast;
+};
