@@ -40,7 +40,10 @@ class Dashboard extends Component{
                         <DayFour forecast = {weekForecast[4]}/>
                     </div>
                     <div className = "item" style={{backgroundColor: "Purple"}}>
-                        <DayFive forecast = {weekForecast[5]}/>
+                        <h2>Day Five</h2>
+                        <div  className = "weather-container">
+                            <DayFive forecast = {weekForecast[5]}/>
+                        </div>
                     </div>
                 </div>
             </div>

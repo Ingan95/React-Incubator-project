@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
-import { Redirect } from 'react-router-dom';
 import SearchField from '../Components/SearchField';
 import Axios from 'axios';
 
