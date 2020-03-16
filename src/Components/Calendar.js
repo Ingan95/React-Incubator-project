@@ -64,7 +64,7 @@ class App extends Component {
     });
 
    return(
-     <div>
+     <div className = "weather-content" style={{backgroundColor: "lightBlue"}}>
        <h1>Calendar </h1>
        <table>
          <thead>
